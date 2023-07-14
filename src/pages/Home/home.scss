@@ -1,0 +1,77 @@
+.home-section {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+
+    .home-greeting-with-desc {
+        display: flex;
+
+        .home-greeting {
+            margin-bottom: 15%;
+
+            .greeting {
+                display: flex;
+               align-items: flex-end;
+               flex-direction: column;
+
+               .home-text {
+                width: 40%;
+               }
+
+               h3 {
+                font-family: 'Shoftime', serif;  
+                font-weight: 200;  
+                text-transform: uppercase;
+                font-style: italic;
+                letter-spacing: -5px;
+               }
+            }
+
+        }
+
+        .home-desc {
+            margin-top: auto;
+            width: 60%;
+        }
+
+    }
+
+    .home-images-display {
+        position: absolute;
+        width: 40%;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        .home-center-image-with-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .home-circle {
+                width: 200px;
+                object-fit: cover;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 0%;
+                left: 10%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    animation: spin 10s linear infinite;
+                }
+            }
+
+            .home-image {
+                width: 75%;
+                object-fit: cover;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
