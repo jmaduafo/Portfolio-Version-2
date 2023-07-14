@@ -1,0 +1,86 @@
+$background: #C79D8B;
+$text: #FFE9BF;
+$detail: #AC4F29;
+
+.contact-section {
+    align-items: flex-end;
+    padding-bottom: 5%;
+    .contact-content {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .form-content {
+            width: 40%;
+
+            .form-data {
+                display: flex;
+                flex-direction: column;
+
+                input, textarea {
+                    padding: 10px 15px;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    border-bottom: 1.5px solid $text;
+                    margin-bottom: 20px;
+                    font-family: 'Montserrat', sans-serif;
+                    color: $text;
+                    font-weight: 200;
+                    font-size: 14px;
+
+                    &::placeholder {
+                        color: $text;
+                        opacity: .8;
+                    }
+
+                    &::-moz-placeholder {
+                        color: $text;
+                        opacity: .8;
+                    }
+
+                    &::-webkit-placeholder {
+                        color: $text;
+                        opacity: .8;
+                    }
+                }
+
+                .form-submit {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            
+        }
+
+        .hit-my-line {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-bottom: 50px;
+
+            h1 {
+                font-family: 'Cormorant', serif;
+                font-weight: 200;
+                margin-bottom: -10px;
+            }
+
+            #based {
+                font-size: 18px;
+            }
+
+            .availability {
+                margin-top: 10px;
+                p {
+                    width: fit-content;
+                    padding: 5px 15px;
+                    border: 1.5px solid $detail;
+                    border-radius: 30px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

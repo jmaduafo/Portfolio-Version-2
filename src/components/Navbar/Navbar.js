@@ -4,10 +4,10 @@ import Menu from '../Menu/Menu'
 
 const Navbar = () => {
   const[isRotated, setIsRotated] = useState(true)
+  const [count, setCount] = useState(0)
 
   const rotateButton = () => {
     setIsRotated(!isRotated)
-    console.log(isRotated)
   }
 
   return (
@@ -18,12 +18,7 @@ const Navbar = () => {
           <h3>JM</h3>
         </div>
         <div className={isRotated === true ? 'nav-links cross' : 'nav-links cancel'} onClick={rotateButton}>
-          {/* <ul>
-            <li>About</li>
-            <li>Works</li>
-            <li>Contact</li>
-          </ul>
-          <button className='resume-btn'>Resume</button> */}
+          
           <i className='bx bx-x bx-lg'></i>
         </div>
       </div>

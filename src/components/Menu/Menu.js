@@ -1,29 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Menu/menu.scss'
 
 const Menu = (prop) => {
+    const [title, setTitle] = useState('home')
+
+    function getTitle(e) {
+        setTitle(e.target.innerText.toLowerCase())
+    }
+
   return (
-    <div className={prop.isRotated ? 'menu-container' : 'menu-container enter'}>
+    <div className={prop.isRotated  ? 'menu-container' : 'menu-container enter'}>
         <div className='display-links'>
             <ul>
                 <div>
-                    <li><span>Home</span></li>
+                    <li className={prop.isRotated ? 'fall' : 'rise'} onClick={getTitle}>Home</li>
                 </div>
                 <div>
-                    <li><span>About</span></li>
+                    <li className={prop.isRotated ? 'fall' : 'rise'} onClick={getTitle}>About</li>
                 </div>
                 <div>
-                    <li><span>Works</span></li>
+                    <li className={prop.isRotated ? 'fall' : 'rise'} onClick={getTitle}>Works</li>
                 </div>
                 <div>
-                    <li><span>Contact</span></li>
+                    <li className={prop.isRotated ? 'fall' : 'rise'} onClick={getTitle}>Contact</li>
                 </div>
             </ul>
-        </div>
-        <div className='display-socials'>
-            {/* <a href='https://github.com/jmaduafo' rel='noreferrer' target='_blank'><i className='bx bxl-github bx-sm'></i></a>
-            <a href='https://www.instagram.com/jazzimanian_devil/' rel='noreferrer' target='_blank'><i className='bx bxl-instagram-alt bx-sm'></i></a>
-            <a href='https://www.linkedin.com/in/jasmine-maduafokwa-48070a180/' rel='noreferrer' target='_blank'><i className='bx bxl-linkedin-square bx-sm' ></i></a> */}
         </div>
     </div>
   )

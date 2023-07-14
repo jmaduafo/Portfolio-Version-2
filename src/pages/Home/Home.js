@@ -18,7 +18,6 @@ const Home = () => {
               </div>
           </div>
         </div>
-        
         <div className='home-texts-content'>
           <div className='home-greeting-with-desc'>
             <div className='home-desc'>

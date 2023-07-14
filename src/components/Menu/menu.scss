@@ -11,35 +11,36 @@
     justify-content: left;
     align-items: center;
     font-family: 'Shoftime', serif;
-    opacity: 0;
-    
+    visibility: hidden;
+
     &.exit {
-        animation: slide-up .4s ease-out forwards;
+        animation: exit .6s ease-out forwards;
     }
 
-    @keyframes slide-up {
+    @keyframes exit {
         from {
-            // transform: translateY(0);
             opacity: 1;
+            visibility: visible;
         }
         to {
-            // transform: translateY(-100%);
-            opacity: 0;            
+            opacity: 0;
+            visibility: hidden;           
         }
     }
 
     &.enter {
-        animation: slide-down .4s ease-out forwards alternate;
+        animation: appear .4s ease-out forwards;
     }
 
-    @keyframes slide-down {
+    @keyframes appear {
         from {
-            // transform: translateY(-100%);
+            
             opacity: 0;
+            visibility: hidden;
         }
         to {
-            // transform: translateY(0%);
             opacity: 1;
+            visibility: visible;
             
         }
     }
@@ -52,31 +53,40 @@
                 font-size: 11rem;
                 text-transform: uppercase;
                 list-style-type: none;
-                line-height: 1em;
+                line-height: 1.1em;
                 cursor: pointer;
-                transform: translateY(120%);
+                transform: translateY(110%);
+                width: fit-content;
                 
-                
-                &::after {
-                    content: '';
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    height: 2px;
-                    width: 0%;
-                    background-color: #FFE9BF;
-                    transition: all .4s ease;
+                &.rise {
+                    animation: rise 1s ease-in-out forwards .5s;
                 }
-    
-                &:hover {
-                    &::after {
-                        width: 100%;
+
+                @keyframes rise {
+                    from {
+                        transform: translateY(110%);
+                    }
+                    to {
+                        transform: translateY(20%);
+                        
                     }
                 }
-    
-                span {
-                    transform: translateY(100%);
+                
+                &.fall {
+                    animation: fall .8s ease-in-out forwards;
                 }
+
+                @keyframes fall {
+                    from {
+                        transform: translateY(20%);
+                    }
+                    to {
+                        transform: translateY(110%);
+                        
+                    }
+                }
+
+            
             }
         }
         

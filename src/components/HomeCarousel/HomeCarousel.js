@@ -44,6 +44,10 @@ const HomeCarousel = () => {
             <span>&#9679;</span>
             <span>Web Designer</span>
             <span>&#9679;</span>
+            <span>Frontend Developer</span>
+            <span>&#9679;</span>
+            <span>Backend Developer</span>
+            <span>&#9679;</span>
             
         </div>
     </div>

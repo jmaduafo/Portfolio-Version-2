@@ -1,6 +1,9 @@
 import './App.scss';
 import Home from './pages/Home/Home'
 import Header from './components/Header/Header'
+import About from './pages/About/About';
+import Resume from './pages/Resume/Resume';
+import Contact from './pages/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 
