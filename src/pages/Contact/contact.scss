@@ -6,7 +6,7 @@ $detail: #AC4F29;
     align-items: flex-end;
     padding-bottom: 5%;
     .contact-content {
-        width: 95%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -25,7 +25,9 @@ $detail: #AC4F29;
                     background-color: transparent;
                     border-bottom: 1.5px solid $text;
                     margin-bottom: 20px;
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: 'Montserrat', serif;
+                    // 
+                    letter-spacing: -.5px;
                     color: $text;
                     font-weight: 200;
                     font-size: 14px;
@@ -46,6 +48,15 @@ $detail: #AC4F29;
                     }
                 }
 
+                .warning {
+                    padding: 15px;
+                    background-color: #ffe9bf52;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    color: rgb(190, 33, 33);
+                }
+
                 .form-submit {
                     width: 100%;
                     display: flex;
@@ -62,23 +73,34 @@ $detail: #AC4F29;
             padding-bottom: 50px;
 
             h1 {
-                font-family: 'Cormorant', serif;
+                font-family: 'Shoftime', serif;
+                text-transform: uppercase;
                 font-weight: 200;
                 margin-bottom: -10px;
+                position: relative;
+
             }
 
             #based {
                 font-size: 18px;
+                margin-top: 10px;
             }
 
             .availability {
-                margin-top: 10px;
+                margin-top: -15px;
+
                 p {
                     width: fit-content;
                     padding: 5px 15px;
                     border: 1.5px solid $detail;
                     border-radius: 30px;
-                    font-weight: 300;
+                    font-weight: 400;
+                    letter-spacing: -.8px;
+
+                    span {
+                        color: rgb(19, 185, 19);
+                        margin-right: 5px;
+                    }
                 }
             }
         }

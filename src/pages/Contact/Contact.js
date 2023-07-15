@@ -11,21 +11,24 @@ const Contact = () => {
             <form className='form-data'>
               <input type='text' placeholder='Name'/>
               <input type='email' placeholder='Email'/>
-              <textarea placeholder='Message' rows={6}></textarea>
+              <textarea placeholder='Send a message...' rows={6}></textarea>
+              <div className='warning'>
+                <p>Please enter a valid email address</p>
+              </div>
               <div className='navigate form-submit'>
-                  <div className='navigate-btn form-btn'>
-                    <button type='submit'>SUBMIT</button>
-                    <i className='bx bx-right-arrow-alt' ></i>
-                  </div>
+                <div className='navigate-btn form-btn'>
+                  <button type='submit'>SUBMIT</button>
+                  <i className='bx bx-right-arrow-alt' ></i>
+                </div>
               </div>
             </form>
           </div>
           <div className='hit-my-line'>
             <h1>Hit My Line!</h1>
-            <p id='based'>Based in the U.S.</p>
             <div className='availability'>
-              <p>Currently available for remote positions</p>
+              <p><span>&#9679;</span>Currently available for remote positions</p>
             </div>
+            <p id='based'>Based in the U.S.</p>
           </div>
         </div>
       </div>
