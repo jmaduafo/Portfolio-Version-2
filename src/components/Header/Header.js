@@ -2,10 +2,10 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import '../Header/header.scss'
 
-const Header = () => {
+const Header = ({nav, setNav, setIsRotated, isRotated}) => {
   return (
     <header>
-        <Navbar/>
+        <Navbar nav={nav} setNav={setNav} setIsRotated={setIsRotated} isRotated={isRotated}/>
     </header>
   )
 }

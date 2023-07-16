@@ -1,0 +1,211 @@
+$background: #C79D8B;
+$text: #FFE9BF;
+$detail: #AC4F29;
+
+.about-section {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: #ffe9bf7d;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #ac4e29b5;
+        border-radius: 10px;
+    }
+    
+
+    .about-content {
+        width: 100%;
+        height: 100%;
+        
+
+        .about-main-intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 3em;
+
+            .about-main-image {
+                flex-basis: 40%;
+                object-fit: cover;
+                position: relative;
+
+                .about-spin-image {
+                    position: absolute;
+                    left: 80%;
+                    top: 90%;
+                    width: 200px;
+                    object-fit: cover;
+                    z-index: 20;
+                    animation: spin 10s linear infinite;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+            .about-main-text {
+                padding: 8% 0;
+                flex-basis: 60%;
+
+                .top-text {
+                   div:first-child {
+                        p {
+                            width: 60%;
+                        }
+                   }
+                   div:last-child {
+                    margin-top: 2em;
+                        h4 {
+                            font-family: 'Montserrat', sans-serif;
+                            text-transform: none;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 1em;
+                            font-size: 3.5rem;
+                        }
+                   }
+                    
+                }
+
+                .bottom-text {
+                    margin-top: 2em;
+
+                }
+                
+            }
+        }
+
+        .about-main-desc-images {
+            margin: 20em 0;
+            position: relative;
+            
+            .about-main-desc {
+                
+                h2 {
+                    line-height: 1em;
+                    letter-spacing: -7px;
+                    font-weight: 300;
+
+                    #music {
+                        cursor: pointer;
+                        
+                    }
+
+                    span {
+                        font-family: 'Cormorant', serif;
+                        font-size: 6rem;
+                        font-style: italic;
+                        color: $detail;
+                        cursor: pointer;                        
+                    }
+                }
+            }
+
+            .about-desc-images {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: -10%;
+                z-index: -1;
+
+                .desc-image {
+                    width: 350px;
+                    height: 520px;
+                    object-fit: cover;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    top: 40%;
+                    left: 40%;
+
+                    
+                    &.anime-image {
+                        top: 45%;
+                        left: 70%;
+                    }
+                    &.netflix-image {
+                        top: 50%;
+                        left: 10%;
+                    }
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        border: 10px solid white;
+                    }
+                }
+
+                
+
+            }
+            
+        }
+
+        .about-works {
+            margin: 0 auto;
+            display: flex;
+            // align-items: center;
+            width: 70%;
+            height: 60vh;
+            padding: 5% 0;
+            gap: 3em;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .about-works-left {
+                flex-basis: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                
+
+                h3 {
+                    font-family: 'Cormorant', serif;
+                    font-style: italic;
+                    letter-spacing: -2px;
+                    // margin-bottom: -20px;
+                    margin-top: 50px;
+                    // text-transform: uppercase;
+                }
+
+                .about-work-image {
+                    object-fit: cover;
+                    // margin-top: 10%;
+
+                }
+            }
+
+            .about-works-right {
+                flex-basis: 40%;
+
+                .about-work-image {
+                    object-fit: cover;
+                }
+
+            }
+
+            .navigate {
+                margin-top: 10px;
+                .navigate-btn {
+                    width: 50%;
+                }
+            }
+
+            
+        }
+        
+        
+    }
+}

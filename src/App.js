@@ -1,22 +1,18 @@
+import { useState, useEffect } from 'react';
 import './App.scss';
-import Home from './pages/Home/Home'
-import Header from './components/Header/Header'
-import About from './pages/About/About';
-import Resume from './pages/Resume/Resume';
-import Works from './pages/Works/Works';
-import Contact from './pages/Contact/Contact';
+import MainPreloader from './components/MainPreloader/MainPreloader';
 import Footer from './components/Footer/Footer';
+import Container from './components/Container/Container';
 
 
 
 function App() {
+  const [preloader, setPreloader] = useState(true)
+  const [count, setCount] = useState(3);
+
   return (
     <div className="container">
-      <Header/>
-      <main>
-        <Home/>
-      </main>
-      <Footer/>
+      {preloader ? <MainPreloader preloader={preloader} setPreloader={setPreloader}/> : <Container/>}
     </div>
   );
 }
