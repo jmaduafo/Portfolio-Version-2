@@ -48,15 +48,22 @@
     ul {
         div {
             overflow: hidden;
+            display: flex;
+            gap: 30px;
+
+            img {
+                width: 200px;
+                animation: spin 10s linear infinite;
+            }
 
             li {
                 font-size: 10rem;
                 text-transform: uppercase;
                 list-style-type: none;
                 line-height: 1.02em;
+                width: fit-content;
                 cursor: pointer;
                 transform: translateY(110%);
-                width: fit-content;
                 
                 &.rise {
                     animation: rise 1s ease-in-out forwards .5s;

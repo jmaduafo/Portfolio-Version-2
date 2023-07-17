@@ -9,7 +9,7 @@ $detail: #AC4F29;
         width: 90%;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        
 
         .form-content {
             width: 40%;
@@ -54,7 +54,16 @@ $detail: #AC4F29;
                     border-radius: 20px;
                     margin-bottom: 20px;
                     text-align: center;
-                    color: rgb(190, 33, 33);
+                    visibility: hidden;
+
+                    &.approved {
+                        color: $text;
+                        visibility: visible;
+                    }
+                    &.error {
+                        color: rgb(190, 33, 33);
+                        visibility: visible;
+                    }
                 }
 
                 .form-submit {
@@ -72,37 +81,62 @@ $detail: #AC4F29;
             align-items: flex-end;
             padding-bottom: 50px;
 
-            h1 {
-                font-family: 'Shoftime', serif;
-                text-transform: uppercase;
-                font-weight: 200;
-                margin-bottom: -10px;
-                position: relative;
-
-            }
-
-            #based {
-                font-size: 18px;
-                margin-top: 10px;
-            }
-
-            .availability {
-                margin-top: -15px;
-
-                p {
-                    width: fit-content;
-                    padding: 5px 15px;
-                    border: 1.5px solid $detail;
-                    border-radius: 30px;
-                    font-weight: 400;
-                    letter-spacing: -.8px;
-
-                    span {
-                        color: rgb(19, 185, 19);
-                        margin-right: 5px;
+            .top-hit {
+                text-align: right;
+                h1 {
+                    font-family: 'Montserrat', serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                    letter-spacing: -8px;
+                    position: relative;
+    
+                }
+    
+                #based {
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+    
+                .availability {
+                    margin-top: -15px;
+                    display: flex;
+                    justify-content: right;
+    
+                    p {
+                        width: fit-content;
+                        padding: 5px 15px;
+                        border: 1.5px solid $detail;
+                        border-radius: 30px;
+                        font-weight: 400;
+                        letter-spacing: -.8px;
+    
+                        span {
+                            color: rgb(19, 185, 19);
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
+            .bottom-hit {
+                display: flex;
+                align-items: center;
+                gap: 3em;
+                margin-top: auto;
+
+                i {
+                    padding: 5px;
+                    border: 1px solid $detail;
+                    border-radius: 50%;
+                }
+
+                .info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
         }
     }
 }

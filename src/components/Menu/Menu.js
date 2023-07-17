@@ -1,5 +1,7 @@
 import React from 'react'
 import '../Menu/menu.scss'
+import menuImage from '../../assets/images/portfolio-image2.png'
+import { motion } from 'framer-motion'
 
 const Menu = ({isRotated, setIsRotated, nav, setNav}) => {
     function getTitle(e) {
@@ -16,18 +18,23 @@ const Menu = ({isRotated, setIsRotated, nav, setNav}) => {
             <ul>
                 <div>
                     <li className={isRotated ? 'fall' : 'rise'} onClick={getTitle}>Home</li>
+                    {nav === 'home' ? <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 1.2, ease: 'easeInOut'}} src={menuImage} alt='spinning menu selector'/> : ''}
                 </div>
                 <div>
                     <li className={isRotated ? 'fall' : 'rise'} onClick={getTitle}>About</li>
+                    {nav === 'about' ? <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 1.2, ease: 'easeInOut'}} src={menuImage} alt='spinning menu selector'/> : ''}
                 </div>
                 <div>
                     <li className={isRotated ? 'fall' : 'rise'} onClick={getTitle}>Works</li>
+                    {nav === 'works' ? <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 1.2, ease: 'easeInOut'}} src={menuImage} alt='spinning menu selector'/> : ''}
                 </div>
                 <div>
                     <li className={isRotated ? 'fall' : 'rise'} onClick={getTitle}>Contact</li>
+                    {nav === 'contact' ? <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 1.2, ease: 'easeInOut'}} src={menuImage} alt='spinning menu selector'/> : ''}
                 </div>
                 <div>
                     <li className={isRotated ? 'fall' : 'rise'} onClick={getTitle}>Resume</li>
+                    {nav === 'resume' ? <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 1.2, ease: 'easeInOut'}} src={menuImage} alt='spinning menu selector'/> : ''}
                 </div>
             </ul>
         </div>
