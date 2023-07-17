@@ -68,7 +68,7 @@ const Contact = () => {
       <div className='main-section contact-section'>
         <div className='contact-content'>
           <div className='form-content'>
-            <form className='form-data' onSubmit={handleSubmit} action={contactApproved === true ? "mailto:wsat1616@gmail.com" : ''} method="post" enctype="text/plain" >
+            <form className='form-data' onSubmit={handleSubmit} action={contactApproved === true ? "mailto:jmaduafokwa@hotmail.com" : ''} method="post" enctype="text/plain" >
               <input type='text' placeholder='Name' value={name} onMouseLeave={mouseHandling} onChange={(e) => setName(e.target.value)}/>
               <input type='email' placeholder='Email' value={email} onMouseLeave={mouseHandling} onChange={(e) => setEmail(e.target.value)}/>
               <textarea placeholder='Send a message...' rows={6} value={message} onMouseLeave={mouseHandling} onChange={(e) => setMessage(e.target.value)}></textarea>
@@ -98,7 +98,7 @@ const Contact = () => {
               </div>
               <div className='info'>
                 <i className='bx bxs-map' ></i>
-                <p>Anywhere</p>
+                <p>Houston, Texas</p>
               </div>
             </div>
             
