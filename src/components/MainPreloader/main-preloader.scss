@@ -34,35 +34,81 @@ $detail: #AC4F29;
         z-index: 20;
     }
 
-    ul {
+
+
+    .loader-num {
         width: 100%;
         height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 40px;
+        font-size: 12rem;
+        font-family: 'Shoftime', serif;
+        line-height: 1.2em;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 10px;
+        overflow: hidden;
 
         div {
-            position: absolute;
-            right: 15%;
-            bottom: 10%;
-            overflow: hidden;
-            display: flex;
+            // overflow: hidden;
+        }
 
-            &:last-child {
-                right: 5%;
+        p {
+            font-size: 12rem;
+            font-family: 'Shoftime', serif;
+            line-height: 1.2em;  
+        }
 
-                li {
-                    transform: translateY(0%);
-                    font-size: 10rem;
-                }
-            }
+        .count-up {
+            line-height: 1.2em;
+        }
+    }
+
+
+    
+
+}
+    
+
+    // ul {
+    //     width: 100%;
+    //     height: 100%;
+
+    //     div {
+    //         position: absolute;
+    //         right: 15%;
+    //         bottom: 10%;
+    //         overflow: hidden;
+    //         display: flex;
+
+    //         .count-up {
+    //             font-size: 12rem;
+    //             font-family: 'Shoftime', serif;
+    //             list-style: none; 
+    //             line-height: 1.2em;    
+    //             margin-bottom: -25%;
+    //         }
+
+            // &:last-child {
+            //     right: 5%;
+
+            //     li {
+            //         transform: translateY(0%);
+            //         font-size: 10rem;
+            //     }
+            // }
 
             
-            li {
-                font-size: 12rem;
-                font-family: 'Shoftime', serif;
-                list-style: none; 
-                line-height: 1.2em;    
-                margin-bottom: -25%;      
-            }
-        }
+            // li {
+            //     font-size: 12rem;
+            //     font-family: 'Shoftime', serif;
+            //     list-style: none; 
+            //     line-height: 1.2em;    
+            //     margin-bottom: -25%;      
+            // }
+
         
-    }
-}
+    

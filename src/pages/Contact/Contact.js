@@ -16,34 +16,39 @@ const Contact = () => {
   const [message, setMessage] = useState('')
   
   function mouseHandling() {
+    // When the mouse leaves the input or textarea box, if the values are empty, then log the 
+    // error message below. If not, then no error should be logged
     if (name === '' || email === '' || message === '') {
       setErrorMessage('This field is required')
     } else {
       setErrorMessage('')
     }
-
   }
 
   function handleSubmit(e) {
     e.preventDefault();
 
+    // If either of the values are empty and the form has been submitted, log error below
     if  (name === '' || email === '' || message === '' ) {
       setContactApproved(false)
       setErrorMessage('All entries must be filled out')
     } 
 
+    // Checks if the name input value is not empty. If it's not empty, then name is approved
     if (name.length) {
       setNameApproved(true)
     } else (
       setNameApproved(false)
     )
 
+    // Checks if the message textarea value is not empty. If it's not empty, then message is approved
     if (message.length) {
       setMessageApproved(true)
     } else (
       setMessageApproved(false)
     )
 
+    // Checks if the email matches with the regex. If it matches, then email is approved
     let regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ 
 
     if (regex.test(email)) {
@@ -52,6 +57,9 @@ const Contact = () => {
       setEmailApproved(false)
     )
 
+    // If all conditions are met with no error and all values in all fields are approved, then
+    // the contact form is approved, the approved message is rendered, and all values are set back to
+    // empty strings
     if (errorMessage === '' && nameApproved && emailApproved && messageApproved) {
       setContactApproved(true)
       setApprovedMessage('Your message has been submitted successfully!')
@@ -59,8 +67,7 @@ const Contact = () => {
       setName('');
       setEmail('');
       setMessage('');
-    }
-    
+    }  
   }
 
   return (
@@ -68,11 +75,13 @@ const Contact = () => {
       <div className='main-section contact-section'>
         <div className='contact-content'>
           <div className='form-content'>
-            <form className='form-data' onSubmit={handleSubmit} action={contactApproved === true ? "mailto:jmaduafokwa@hotmail.com" : ''} method="post" enctype="text/plain" >
+            <form className='form-data' onSubmit={handleSubmit} action={contactApproved === true ? "mailto: jmaduafokwa@hotmail.com" : ''} method="post" enctype="multipart/form-data" >
               <input type='text' placeholder='Name' value={name} onMouseLeave={mouseHandling} onChange={(e) => setName(e.target.value)}/>
               <input type='email' placeholder='Email' value={email} onMouseLeave={mouseHandling} onChange={(e) => setEmail(e.target.value)}/>
               <textarea placeholder='Send a message...' rows={6} value={message} onMouseLeave={mouseHandling} onChange={(e) => setMessage(e.target.value)}></textarea>
+              {/* Changes text color when error is logged (red) versus when form has no errors (cream) */}
               <div className={contactApproved === true ? 'warning approved' : 'warning error'}>
+                {/* If there are no errors and all conditions are met, render approved message. If not, render error messages */}
                 <p>{contactApproved ? approvedMessage : errorMessage}</p>
               </div>
               <div className='navigate form-submit'>
@@ -85,9 +94,9 @@ const Contact = () => {
           </div>
           <div className='hit-my-line'>
             <div className='top-hit'>
-              <h1>Hit My Line!</h1>
+              <h2>Hit My Line!</h2>
               <div className='availability'>
-                <p><span>&#9679;</span>Currently available for hybrid/remote positions</p>
+                <p><span>&#9679;</span>Currently available for hybrid / remote positions</p>
               </div>
               <p id='based'>Based in the U.S.</p>
             </div>
@@ -101,8 +110,6 @@ const Contact = () => {
                 <p>Houston, Texas</p>
               </div>
             </div>
-            
-
           </div>
         </div>
       </div>

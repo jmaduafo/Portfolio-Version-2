@@ -50,7 +50,7 @@ $detail: #AC4F29;
 
                 .warning {
                     padding: 15px;
-                    background-color: #ffe9bf52;
+                    background-color: #ffe9bf30;
                     border-radius: 20px;
                     margin-bottom: 20px;
                     text-align: center;
@@ -83,14 +83,10 @@ $detail: #AC4F29;
 
             .top-hit {
                 text-align: right;
-                h1 {
+                h2 {
                     font-family: 'Montserrat', serif;
-                    font-style: normal;
-                    font-weight: 300;
                     margin-bottom: 20px;
-                    letter-spacing: -8px;
-                    position: relative;
-    
+                    position: relative;    
                 }
     
                 #based {
