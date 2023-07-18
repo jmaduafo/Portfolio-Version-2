@@ -89,6 +89,11 @@ const skillsData = [
         "category": "other",
         "language": "illustrator"
     },
+    {
+        "id": 19,
+        "category": "frontend",
+        "language": "Git"
+    },
     
 ]
 

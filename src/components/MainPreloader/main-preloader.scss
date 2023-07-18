@@ -2,6 +2,13 @@ $background: #C79D8B;
 $text: #FFE9BF;
 $detail: #AC4F29;
 
+$xs: 0;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+$giant: 1400px;
+
 .preloader-section {
     width: 100vw;
     height: 100vh;
@@ -34,8 +41,6 @@ $detail: #AC4F29;
         z-index: 20;
     }
 
-
-
     .loader-num {
         width: 100%;
         height: 100%;
@@ -52,63 +57,97 @@ $detail: #AC4F29;
         gap: 10px;
         overflow: hidden;
 
-        div {
-            // overflow: hidden;
-        }
-
         p {
             font-size: 12rem;
             font-family: 'Shoftime', serif;
             line-height: 1.2em;  
+
+
         }
 
         .count-up {
             line-height: 1.2em;
         }
-    }
-
-
-    
+    }   
 
 }
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .preloader-section { 
     
-
-    // ul {
-    //     width: 100%;
-    //     height: 100%;
-
-    //     div {
-    //         position: absolute;
-    //         right: 15%;
-    //         bottom: 10%;
-    //         overflow: hidden;
-    //         display: flex;
-
-    //         .count-up {
-    //             font-size: 12rem;
-    //             font-family: 'Shoftime', serif;
-    //             list-style: none; 
-    //             line-height: 1.2em;    
-    //             margin-bottom: -25%;
-    //         }
-
-            // &:last-child {
-            //     right: 5%;
-
-            //     li {
-            //         transform: translateY(0%);
-            //         font-size: 10rem;
-            //     }
-            // }
-
-            
-            // li {
-            //     font-size: 12rem;
-            //     font-family: 'Shoftime', serif;
-            //     list-style: none; 
-            //     line-height: 1.2em;    
-            //     margin-bottom: -25%;      
-            // }
-
+        .loader-num {
+            font-size: 4rem;
+    
+            p {
+                font-size: 4rem;
+            }
+        }  
+    
+    }
+}
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .preloader-section { 
+    
+        .loader-num {
+            font-size: 7rem;
+            padding: 10px 40px;
+    
+            p {
+                font-size: 7rem;
+            }
+        }  
+    
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .preloader-section { 
+    
+        .loader-num {
+            font-size: 8rem;
+    
+            p {
+                font-size: 8rem;
+            }
+        }  
+    
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .preloader-section { 
+    
+        .loader-num {
+            font-size: 9rem;
+            padding: 10px 40px;
+    
+            p {
+                font-size: 9rem;
+            }
+        }  
+    
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    .preloader-section { 
+    
+        .loader-num {
+            font-size: 12rem;
+            padding: 10px 70px;
+    
+            p {
+                font-size: 12rem;
+            }
+        }  
+    
+    }
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+    .preloader-section { 
+    
+        .loader-num {
+            padding-right: 5rem;
+        }  
+    
+    }
+}
         
     
