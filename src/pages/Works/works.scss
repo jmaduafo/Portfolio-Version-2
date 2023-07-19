@@ -37,3 +37,111 @@
         }
     }
 }
+
+$xs: 0;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+$giant: 1400px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .works-section {
+        .works-content {
+            width: 95%;
+            padding-top: 10%;
+    
+            .works-display {
+                display: flex;
+                gap: 3rem;
+    
+                div {
+                    .works-image {
+                        width: 250px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .works-section {
+        .works-content {
+            width: 90%;
+            padding-top: 10%;
+    
+            .works-display {
+                display: flex;
+                gap: 3rem;
+    
+                div {
+                    .works-image {
+                        width: 320px;
+                        height: 440px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .works-section {
+        .works-content {
+            width: 90%;
+            padding-top: 10%;
+    
+            .works-display {
+                display: flex;
+                gap: 3rem;
+    
+                div {
+                    .works-image {
+                        width: 320px;
+                        height: 440px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    .works-section {
+        .works-content {
+            width: 85%;
+            padding-top: 10%;
+    
+            .works-display {
+                display: flex;
+                gap: 3rem;
+    
+                div {
+                    .works-image {
+                        width: 320px;
+                        height: 440px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+    .works-section {
+        .works-content {
+            width: 85%;
+            padding-top: 10%;
+    
+            .works-display {
+                display: flex;
+                gap: 3rem;
+    
+                div {
+                    .works-image {
+                        width: 320px;
+                        height: 440px;
+                    }
+                }
+            }
+        }
+    }
+}

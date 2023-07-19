@@ -25,7 +25,6 @@ nav {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 30px;
             width: 60px;
             height: 60px;
             // border: 1.5px solid #AC4F29;
@@ -33,6 +32,10 @@ nav {
             transition: all .4s ease;
             cursor: pointer;
             z-index: 60;
+
+            i {
+                font-size: 3rem;
+            }
 
             &.cross {
                 transform: rotate(45deg);
@@ -44,57 +47,144 @@ nav {
                 border: 1.5px solid #FFE9BF;
             }
 
+        }
+    }
+}
 
-            // ul {
-            //     display: flex;
-            //     align-items: center;
-            //     gap: 25px;
+$xs: 0;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+$giant: 1400px;
 
-            //     li {
-            //         font-size: 13px;
-            //         font-weight: 200;
-            //         list-style-type: none;
-            //         cursor: pointer;
-            //         position: relative;
-            //         text-transform: lowercase;
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    nav {    
+        .navbar {
+    
+            .navbar-logo {    
+                h3 {
+                    letter-spacing: -14px;
+    
+                    &:hover {
+                        letter-spacing: -8px;
+                    }
+                }
+            }
+    
+            .nav-links {
+                width: 35px;
+                height: 35px;
 
-            //         &::after {
-            //             content: '';
-            //             position: absolute;
-            //             top: 100%;
-            //             left: 0;
-            //             height: 1.5px;
-            //             width: 0%;
-            //             background-color: #FFE9BF;
-            //             transition: all .4s ease;
-            //         }
+                i {
+                    font-size: 1rem;
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    nav {    
+        .navbar {
+            .navbar-logo {    
+                h3 {
+                    letter-spacing: -14px;
+    
+                    &:hover {
+                        letter-spacing: -8px;
+                    }
+                }
+            }
+    
+            .nav-links {
+                width: 40px;
+                height: 40px;
 
-            //         &:hover {
-            //             &::after {
-            //                 width: 100%;
-            //             }
-            //         }
-            //     }
-            // }
+                i {
+                    font-size: 1.5rem;
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    nav {    
+        .navbar {
+    
+            .navbar-logo {    
+                h3 {
+                    font-weight: lighter;
+                    letter-spacing: -14px;
+    
+                    &:hover {
+                        letter-spacing: -8px;
+                    }
+                }
+            }
+    
+            .nav-links {
+                width: 45px;
+                height: 45px;
 
-            // .resume-btn {
-            //     padding: 7px 30px;
-            //     background-color: transparent;
-            //     border: 1px solid #AC4F29;
-            //     color: #FFE9BF;
-            //     outline: none;
-            //     border-radius: 30px;
-            //     font-weight: 200;
-            //     cursor: pointer;
-            //     transition: all .4s ease;
+                i {
+                    font-size: 2rem;
+                }
+    
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    nav {    
+        .navbar {
+    
+            .navbar-logo {    
+                h3 {
+                    font-weight: lighter;
+                    letter-spacing: -26.5px;
+    
+                    &:hover {
+                        letter-spacing: -8px;
+                    }
+                }
+            }
+    
+            .nav-links {
+                width: 60px;
+                height: 60px;
 
-            //     &:hover {
-            //         background-color: #AC4F29;
-                    
-            //     }
-            // }
+                i {
+                    font-size: 2.5rem;
+                }
+    
+            }
+        }
+    }
 
-
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+    nav {    
+        .navbar {
+    
+            .navbar-logo {    
+                h3 {
+                    font-weight: lighter;
+                    letter-spacing: -26.5px;
+    
+                    &:hover {
+                        letter-spacing: -8px;
+                    }
+                }
+            }
+    
+            .nav-links {
+                width: 60px;
+                height: 60px;
+    
+            }
         }
     }
 }

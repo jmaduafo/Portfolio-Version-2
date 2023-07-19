@@ -360,32 +360,32 @@ i {
 }
 @media screen and (min-width: $sm) and (max-width: $md) {
     h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
         margin-top: -2rem;
     }
     
     h2 {
-    font-size: 3.5rem;  
+    font-size: 4rem;  
     letter-spacing: -8px;
     }
     
     h3 {
-        font-size: 2rem; 
+        font-size: 3rem; 
         font-weight: 300;
     }
     
     h4 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         letter-spacing: -5px;
     }
     
     h5 {
-        font-size: 1rem;  
+        font-size: 2rem;  
         letter-spacing: -2px;
     }
     
     h6 {
-        font-size: .6rem;  
+        font-size: 1.5rem;  
     }
     
     p {
@@ -453,36 +453,36 @@ i {
 }
 @media screen and (min-width: $md) and (max-width: $lg) {
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         margin-top: -2rem;
     }
     
     h2 {
-    font-size: 3.5rem;  
+    font-size: 4.5rem;  
     letter-spacing: -8px;
     }
     
     h3 {
-        font-size: 2rem; 
+        font-size: 4rem; 
         font-weight: 300;
     }
     
     h4 {
-        font-size: 1.5rem;
+        font-size: 3.5rem;
         letter-spacing: -5px;
     }
     
     h5 {
-        font-size: 1rem;  
+        font-size: 3rem;  
         letter-spacing: -2px;
     }
     
     h6 {
-        font-size: .6rem;  
+        font-size: 2rem;  
     }
     
     p {
-        font-size: 13px;
+        font-size: 14px;
     }
     
     button {

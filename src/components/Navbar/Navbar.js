@@ -21,7 +21,7 @@ const Navbar = ({nav, setNav, isRotated, setIsRotated}) => {
         </div>
         {/* If the rotation is set to true, show the nav menu as a 'cross' and if false, display nav as an 'x'*/}
         <div className={isRotated === true ? 'nav-links cross' : 'nav-links cancel'} onClick={rotateButton}>
-          <i className='bx bx-x bx-lg'></i>
+          <i className='bx bx-x'></i>
         </div>
       </div>
     </nav>

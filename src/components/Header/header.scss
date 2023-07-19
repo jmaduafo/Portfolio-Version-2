@@ -4,3 +4,41 @@ header {
     padding: 10px 60px;
     z-index: 50;
 }
+
+$xs: 0;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+$giant: 1400px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    header {
+        width: 100%;
+        padding: 15px 30px;
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    header {
+        width: 100%;
+        padding: 15px 40px;
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    header {
+        width: 100%;
+        padding: 10px 50px;
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    header {
+        width: 100%;
+        padding: 10px 60px;
+    }
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+    header {
+        width: 100%;
+        padding: 10px 60px;
+    }
+}

@@ -23,8 +23,6 @@ const MainPreloader = ({setPreloader}) => {
       clearInterval(intervalRef.current)
       setPreloader(false)
     }
-
-    console.log(timer)
   }, [timer])
 
 

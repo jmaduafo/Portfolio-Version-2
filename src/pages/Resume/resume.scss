@@ -54,7 +54,211 @@
             }
         }
     }
-    
+}
 
-  
+$xs: 0;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+$giant: 1400px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .resume-section {
+        width: 70%;
+        margin: 0 auto;
+        align-items: flex-start;
+        padding: 12% 0; 
+        gap: 5em;
+    
+        .resume-download-with-skill-select {
+            flex-basis: 40%;
+    
+            .resume-download {
+                .navigate {
+                    width: 100%;
+                    .navigate-btn {
+                        width: 100%;
+                        border: 1.5px solid #AC4F29;
+                        button {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+    
+            .skill-select {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 10px;
+    
+                .select {
+                    cursor: pointer;
+    
+                    p {
+                        transition: all .4s ease;
+                    }
+                }
+            }
+        }
+    
+        .skills-render {
+            flex-basis: 60%;
+    
+            div {
+                width: 100%;
+                border-bottom: .7px solid #FFE9BF;
+                display: flex;
+                justify-content: flex-end;
+                padding: 15px 20px;
+    
+                p {
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    nav {    
+        .navbar {
+            .navbar-logo {    
+                h3 {
+                    letter-spacing: -14px;
+    
+                    &:hover {
+                        letter-spacing: -8px;
+                    }
+                }
+            }
+    
+            .nav-links {
+                width: 40px;
+                height: 40px;
+
+                i {
+                    font-size: 1.5rem;
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    nav {    
+        .navbar {
+    
+            .navbar-logo {    
+                h3 {
+                    font-weight: lighter;
+                    letter-spacing: -14px;
+    
+                    &:hover {
+                        letter-spacing: -8px;
+                    }
+                }
+            }
+    
+            .nav-links {
+                width: 45px;
+                height: 45px;
+
+                i {
+                    font-size: 2rem;
+                }
+    
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    nav {    
+        .navbar {
+    
+            .navbar-logo {    
+                h3 {
+                    font-weight: lighter;
+                    letter-spacing: -26.5px;
+    
+                    &:hover {
+                        letter-spacing: -8px;
+                    }
+                }
+            }
+    
+            .nav-links {
+                width: 60px;
+                height: 60px;
+
+                i {
+                    font-size: 2.5rem;
+                }
+    
+            }
+        }
+    }
+
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+    .resume-section {
+        width: 70%;
+        margin: 0 auto;
+        align-items: flex-start;
+        padding: 12% 0; 
+        gap: 5em;
+    
+        .resume-download-with-skill-select {
+            flex-basis: 40%;
+    
+            .resume-download {
+                .navigate {
+                    width: 100%;
+                    .navigate-btn {
+                        width: 100%;
+                        border: 1.5px solid #AC4F29;
+                        button {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+    
+            .skill-select {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 10px;
+    
+                .select {
+                    cursor: pointer;
+    
+                    p {
+                        transition: all .4s ease;
+                    }
+                }
+            }
+        }
+    
+        .skills-render {
+            flex-basis: 60%;
+    
+            div {
+                width: 100%;
+                border-bottom: .7px solid #FFE9BF;
+                display: flex;
+                justify-content: flex-end;
+                padding: 15px 20px;
+    
+                p {
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
 }

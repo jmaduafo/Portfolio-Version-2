@@ -31,7 +31,7 @@ const Resume = () => {
             <div className='navigate'>
               <div className='navigate-btn'>
                 <a href={resume} download><button>Download Resume</button></a>
-                <i class='bx bx-right-arrow-alt bx-sm'></i>
+                <i className='bx bx-right-arrow-alt bx-sm'></i>
               </div>
             </div>
           </div>

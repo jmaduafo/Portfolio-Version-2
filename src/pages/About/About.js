@@ -58,7 +58,7 @@ const About = ({setNav}) => {
             <div className='about-works'>
               <div className='about-works-left'>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit condimentum mauris a dignissim. Fusce rutrum fringilla leo, nec varius est fermentum eget. Nam mollis scelerisque urna, ut consectetur felis sagittis id.</p>
-                <h3>Discover More</h3>
+                {/* <h3>Discover More</h3> */}
                 <div className='about-work-image about-work-left-image'>
                   <img src={worksImage1} alt='sleek teal and gold office space with blue suede chair' />
                 </div>
@@ -70,7 +70,7 @@ const About = ({setNav}) => {
                 <div className='navigate'>
                   <div className='navigate-btn'>
                     <button onClick={() => setNav('works')}>View Works</button>
-                    <i class='bx bx-right-arrow-alt' ></i>
+                    <i className='bx bx-right-arrow-alt' ></i>
                   </div>
                 </div>
               </div>
