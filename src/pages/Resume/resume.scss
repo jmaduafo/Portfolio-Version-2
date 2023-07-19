@@ -2,8 +2,8 @@
     width: 70%;
     margin: 0 auto;
     align-items: flex-start;
-    padding: 12% 0; 
-    gap: 5em;
+    padding: 10% 0; 
+    gap: 7em;
 
     .resume-download-with-skill-select {
         flex-basis: 40%;
@@ -70,10 +70,11 @@ $giant: 1400px;
         align-items: center;
         flex-direction: column;
         gap: 1em;
+        padding: 20% 0; 
         
     
         .resume-download-with-skill-select {
-            flex-basis: 100%;
+            width: 80%;
     
             .resume-download {
                 .navigate {
@@ -93,13 +94,10 @@ $giant: 1400px;
         }
     
         .skills-render {
-            flex-basis: 100%;
+            width: 80%;
     
             div {
-                width: 100%;
-                border-bottom: .7px solid #FFE9BF;
-                display: flex;
-                justify-content: flex-end;
+                width: 100%;                
     
                 p {
                     font-size: 12px;
@@ -109,93 +107,54 @@ $giant: 1400px;
     }
 }
 @media screen and (min-width: $sm) and (max-width: $md) {
-    nav {    
-        .navbar {
-            .navbar-logo {    
-                h3 {
-                    letter-spacing: -14px;
+    .resume-section {
+        width: 100%;
+        overflow-y: auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+        padding: 20% 0; 
+        
     
-                    &:hover {
-                        letter-spacing: -8px;
+        .resume-download-with-skill-select {
+            width: 60%;
+    
+            .resume-download {
+                .navigate {
+                    width: 100%;
+                    .navigate-btn {
+                        width: 100%;
+                        button {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
     
-            .nav-links {
-                width: 40px;
-                height: 40px;
-
-                i {
-                    font-size: 1.5rem;
-                }
+            .skill-select {
+                margin-top: 10px;
+            }
+        }
     
+        .skills-render {
+            width: 60%;
+    
+            div {
+                width: 100%;                
+    
+                p {
+                    font-size: 12px;
+                }
             }
         }
     }
 }
 @media screen and (min-width: $md) and (max-width: $lg) {
-    nav {    
-        .navbar {
-    
-            .navbar-logo {    
-                h3 {
-                    font-weight: lighter;
-                    letter-spacing: -14px;
-    
-                    &:hover {
-                        letter-spacing: -8px;
-                    }
-                }
-            }
-    
-            .nav-links {
-                width: 45px;
-                height: 45px;
-
-                i {
-                    font-size: 2rem;
-                }
-    
-    
-            }
-        }
-    }
-}
-@media screen and (min-width: $lg) and (max-width: $xl) {
-    nav {    
-        .navbar {
-    
-            .navbar-logo {    
-                h3 {
-                    font-weight: lighter;
-                    letter-spacing: -26.5px;
-    
-                    &:hover {
-                        letter-spacing: -8px;
-                    }
-                }
-            }
-    
-            .nav-links {
-                width: 60px;
-                height: 60px;
-
-                i {
-                    font-size: 2.5rem;
-                }
-    
-            }
-        }
-    }
-
-}
-@media screen and (min-width: $xl) and (max-width: $giant) {
     .resume-section {
-        width: 70%;
-        margin: 0 auto;
-        align-items: flex-start;
-        padding: 12% 0; 
-        gap: 5em;
+        width: 80%;
+        gap: 2em;
+        padding: 20% 0; 
+        
     
         .resume-download-with-skill-select {
             flex-basis: 40%;
@@ -205,27 +164,15 @@ $giant: 1400px;
                     width: 100%;
                     .navigate-btn {
                         width: 100%;
-                        border: 1.5px solid #AC4F29;
                         button {
-                            font-size: 18px;
+                            font-size: 14px;
                         }
                     }
                 }
             }
     
             .skill-select {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 margin-top: 10px;
-    
-                .select {
-                    cursor: pointer;
-    
-                    p {
-                        transition: all .4s ease;
-                    }
-                }
             }
         }
     
@@ -233,18 +180,56 @@ $giant: 1400px;
             flex-basis: 60%;
     
             div {
-                width: 100%;
-                border-bottom: .7px solid #FFE9BF;
-                display: flex;
-                justify-content: flex-end;
-                padding: 15px 20px;
+                width: 100%;                
     
                 p {
-                    text-transform: uppercase;
-                    font-size: 13px;
-                    font-weight: 300;
+                    font-size: 12px;
                 }
             }
         }
     }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    .resume-section {
+        width: 75%;
+        gap: 4em;
+        padding: 15% 0; 
+        
+    
+        .resume-download-with-skill-select {
+            flex-basis: 40%;
+    
+            .resume-download {
+                .navigate {
+                    width: 100%;
+                    .navigate-btn {
+                        width: 100%;
+                        button {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+    
+            .skill-select {
+                margin-top: 10px;
+            }
+        }
+    
+        .skills-render {
+            flex-basis: 60%;
+    
+            div {
+                width: 100%;                
+    
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+
 }

@@ -76,3 +76,286 @@
         }
     }
 }
+
+$xs: 0;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+$giant: 1400px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .home-section {
+        padding: 5%;
+    
+        .home-greeting-with-desc {
+            display: flex;
+            flex-direction: column-reverse;
+    
+            .home-greeting {
+                margin-bottom: 30%;
+    
+                .greeting {
+                    display: flex;
+                   align-items: flex-end;
+                   flex-direction: column;
+    
+                   .home-text {
+                    width: 70%;
+                    mix-blend-mode: hard-light;
+                   }
+    
+                   h3 {
+                    letter-spacing: 0px;
+                    mix-blend-mode: hard-light;
+                    
+                   }
+                }
+    
+            }
+    
+            .home-desc {
+                margin-top: auto;
+                width: 70%;
+                mix-blend-mode: hard-light;
+            }
+    
+        }
+    
+        .home-images-display {
+            width: 90%;
+            left: 50%;
+            top: 50%;
+            
+
+            .home-center-image-with-circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .home-circle {
+                    width: 100px;
+                    top: 0%;
+                    left: 10%;
+                }
+    
+                .home-image {
+                    width: 75%;
+
+                    .home-cover {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: transparent;
+                        z-index: 1;
+                        backdrop-filter: blur(1.5px);
+                    
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .home-section {
+        padding: 5%;
+    
+        .home-greeting-with-desc {
+            display: flex;
+            flex-direction: column-reverse;
+    
+            .home-greeting {
+                margin-bottom: 15%;
+    
+                .greeting {
+                    display: flex;
+                   align-items: flex-end;
+                   flex-direction: column;
+    
+                   .home-text {
+                    width: 50%;
+                    mix-blend-mode: hard-light;
+                   }
+    
+                   h3 {
+                    letter-spacing: 0px;
+                    mix-blend-mode: hard-light;
+                    
+                   }
+                }
+    
+            }
+    
+            .home-desc {
+                margin-top: auto;
+                width: 40%;
+                mix-blend-mode: hard-light;
+            }
+    
+        }
+    
+        .home-images-display {
+            width: 65%;
+            left: 50%;
+            top: 50%;
+            
+
+            .home-center-image-with-circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .home-circle {
+                    width: 100px;
+                    top: 0%;
+                    left: 10%;
+                }
+    
+                .home-image {
+                    width: 75%;
+                    position: relative;
+
+                    .home-cover {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: transparent;
+                        z-index: 1;
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .home-section {
+        padding-top: 20%;
+    
+        .home-greeting-with-desc {
+            display: flex;
+            flex-direction: column-reverse;
+    
+            .home-greeting {
+                margin-bottom: 18%;
+    
+                .greeting {
+                    display: flex;
+                   align-items: flex-end;
+                   flex-direction: column;
+    
+                   .home-text {
+                    width: 45%;
+                    mix-blend-mode: hard-light;
+                   }
+    
+                   h3 {
+                    letter-spacing: 0px;
+                    mix-blend-mode: hard-light;
+                    
+                   }
+                }
+    
+            }
+    
+            .home-desc {
+                margin-top: auto;
+                width: 50%;
+                mix-blend-mode: hard-light;
+            }
+    
+        }
+    
+        .home-images-display {
+            width: 60%;
+            left: 50%;
+            top: 70%;
+            
+
+            .home-center-image-with-circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .home-circle {
+                    width: 100px;
+                    top: 0%;
+                    left: 10%;
+                }
+    
+                .home-image {
+                    width: 75%;
+                    position: relative;
+
+                    .home-cover {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: transparent;
+                        z-index: 1;
+                        // backdrop-filter: blur(3px);
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    .home-section {
+        width: 100%;
+        padding: 5%;
+        position: relative;
+    
+        .home-greeting-with-desc {
+    
+            .home-greeting {
+                margin-bottom: 10%;
+    
+                .greeting {
+    
+                   .home-text {
+                    width: 35%;
+                   }
+    
+                   h3 {
+                    letter-spacing: -3px;
+                    mix-blend-mode: hard-light;
+                   }
+                }
+    
+            }
+    
+            .home-desc {
+                margin-top: auto;
+                width: 70%;
+            }
+    
+        }
+    
+        .home-images-display {
+            width: 50%;
+            left: 50%;
+            top: 70%;
+            .home-center-image-with-circle {
+    
+                .home-circle {
+                    width: 150px;
+                }
+    
+                .home-image {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+}
