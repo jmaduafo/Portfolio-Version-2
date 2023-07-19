@@ -232,8 +232,8 @@ i {
         height: calc(100vh - 90vh - 60px);
     
         .carousel {
-            gap: 2em;
-            width: 4000%;
+            gap: 1em;
+            width: 8000%;
             margin-bottom: 0em;
             animation: carousel 100s linear infinite;
 
@@ -265,7 +265,7 @@ i {
     }
 }
 
-@media screen and (min-width: $xs) and (max-width: $sm) {
+@media only screen and (min-width: $xs) and (max-width: $sm) {
     h1 {
         font-size: 4rem;
         margin-top: -2rem;
@@ -277,12 +277,12 @@ i {
     }
     
     h3 {
-        font-size: 2rem; 
+        font-size: 3rem; 
         font-weight: 300;
     }
     
     h4 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         letter-spacing: -5px;
     }
     
@@ -327,9 +327,9 @@ i {
     
         .carousel {
             gap: 2em;
-            width: 4000%;
+            width: 9000%;
             margin-bottom: 0em;
-            animation: carousel 100s linear infinite;
+            animation: carousel 150s linear infinite;
 
             @keyframes carousel {
                 from {
@@ -358,7 +358,7 @@ i {
         height: 60px;
     }
 }
-@media screen and (min-width: $sm) and (max-width: $md) {
+@media only screen and (min-width: $sm) and (max-width: $md) {
     h1 {
         font-size: 4.5rem;
         margin-top: -2rem;
@@ -420,7 +420,7 @@ i {
     
         .carousel {
             gap: 2em;
-            width: 4000%;
+            width: 5000%;
             margin-bottom: 0em;
             animation: carousel 100s linear infinite;
 

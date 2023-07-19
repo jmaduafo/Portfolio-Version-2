@@ -32,14 +32,18 @@ $giant: 1400px;
     .footer-section {
         .footer-content {
             width: 100%;
+            flex-direction: column;
+            justify-content: center;
             
             .copyright {
+                text-align: center;
+                margin-bottom: 5px;
                 p {
                     font-size: 10px;
                 }
             }
             .footer-socials {
-                gap: 10px;
+                gap: 5px;
             }
         }
     }
