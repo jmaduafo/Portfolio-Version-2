@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Version-2/static/css/main.e08fb655.css",
+    "main.js": "/Portfolio-Version-2/static/js/main.a95c8cf7.js",
+    "static/media/work-about.jpg": "/Portfolio-Version-2/static/media/work-about.ee377f50f93e3c91af31.jpg",
+    "static/media/pixie26.jpg": "/Portfolio-Version-2/static/media/pixie26.dbae9d8d59ae8cc9627c.jpg",
+    "static/media/simpler-port3.jpg": "/Portfolio-Version-2/static/media/simpler-port3.83c6a3e8e72a9f448d52.jpg",
+    "static/media/gift_box_final.jpg": "/Portfolio-Version-2/static/media/gift_box_final.dacd141406e91f9c207d.jpg",
+    "static/media/landon16.jpg": "/Portfolio-Version-2/static/media/landon16.e6dd1f9a2956c986a169.jpg",
+    "static/media/music-image1.jpg": "/Portfolio-Version-2/static/media/music-image1.c35b3954be8f1e732dd5.jpg",
+    "static/media/simpler-port2.jpg": "/Portfolio-Version-2/static/media/simpler-port2.dff65991ff88b69922a5.jpg",
+    "static/media/netflix-image1.jpg": "/Portfolio-Version-2/static/media/netflix-image1.9bc1327e257d9947dc49.jpg",
+    "static/media/pixie5.jpg": "/Portfolio-Version-2/static/media/pixie5.d7a944d29fef17f8f4fe.jpg",
+    "static/media/anime-image.jpg": "/Portfolio-Version-2/static/media/anime-image.b432bfcb1cf1ffd7c651.jpg",
+    "static/media/jasmine resume.pdf": "/Portfolio-Version-2/static/media/jasmine resume.feda753349be8eb26a62.pdf",
+    "static/media/tan-jm.png": "/Portfolio-Version-2/static/media/tan-jm.98bfb5b0309f9c07a1ae.png",
+    "static/media/portfolio-image2.png": "/Portfolio-Version-2/static/media/portfolio-image2.13e721adb4f291849c55.png",
+    "index.html": "/Portfolio-Version-2/index.html",
+    "main.e08fb655.css.map": "/Portfolio-Version-2/static/css/main.e08fb655.css.map",
+    "main.a95c8cf7.js.map": "/Portfolio-Version-2/static/js/main.a95c8cf7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e08fb655.css",
+    "static/js/main.a95c8cf7.js"
+  ]
+}
