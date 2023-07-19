@@ -173,107 +173,13 @@ i {
 
 @media screen and (min-width: $xs) and (max-width: $sm) {    
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       margin-top: -2rem;
     }
     
     h2 {
-      font-size: 2.5rem;  
-      letter-spacing: -8px;
-    }
-    
-    h3 {
-        font-size: 2rem; 
-        font-weight: 300;
-    }
-    
-    h4 {
-        font-size: 1.5rem;
-        letter-spacing: -5px;
-    }
-    
-    h5 {
-        font-size: 1rem;  
-        letter-spacing: -2px;
-    }
-    
-    h6 {
-        font-size: .6rem;  
-    }
-    
-    p {
-        font-size: 13px;
-    }
-    
-    button {
-        font-size: 12px;
-    }
-    
-    .navigate {
-        .navigate-btn {
-            width: 30%;
-            padding: 0 20px;
-            border-radius: 30px;
-    
-            button {
-                padding: 6px 10px;
-            }
-        }
-    }
-    
-    .main-section {
-        padding: 0 50px;
-        height: 90vh;
-    }
-    
-    
-    // AUTOMATIC CAROUSEL DISPLAY
-    .main-carousel {
-        height: calc(100vh - 90vh - 60px);
-    
-        .carousel {
-            gap: 1em;
-            width: 8000%;
-            margin-bottom: 0em;
-            animation: carousel 100s linear infinite;
-
-            @keyframes carousel {
-                from {
-                    transform: translateX(0);
-                }
-                to {
-                    transform: translateX(-30%);
-                }
-            }
-            
-            span {
-                font-size: 4rem;
-                font-weight: lighter;
-                text-transform: uppercase;
-                letter-spacing: -3px;
-    
-                &:nth-child(even) {
-                    font-size: 30px;
-                }
-            }
-        }
-    }
-    
-    .footer-section {
-        width: 100%;
-        height: 60px;
-    }
-}
-
-@media only screen and (min-width: $xs) and (max-width: $sm) {
-    h1 {
-        font-size: 4rem;
-        margin-top: -2rem;
-    }
-    
-    h2 {
-    font-size: 3.5rem;  
-    letter-spacing: -8px;
+      font-size: 3.5rem;  
+      letter-spacing: -7px;
     }
     
     h3 {
@@ -282,21 +188,21 @@ i {
     }
     
     h4 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         letter-spacing: -5px;
     }
     
     h5 {
-        font-size: 1rem;  
+        font-size: 1.5rem;  
         letter-spacing: -2px;
     }
     
     h6 {
-        font-size: .6rem;  
+        font-size: 1rem;  
     }
     
     p {
-        font-size: 13px;
+        font-size: 10px;
     }
     
     button {
@@ -305,7 +211,7 @@ i {
     
     .navigate {
         .navigate-btn {
-            width: 30%;
+            width: 70%;
             padding: 0 20px;
             border-radius: 30px;
     
@@ -316,18 +222,18 @@ i {
     }
     
     .main-section {
-        padding: 0 50px;
+        padding: 0 30px;
         height: 80vh;
     }
     
     
     // AUTOMATIC CAROUSEL DISPLAY
     .main-carousel {
-        height: calc(100vh - 80vh - 60px);
+        height: calc(100vh - 80vh - 70px);
     
         .carousel {
-            gap: 2em;
-            width: 9000%;
+            gap: 1em;
+            width: 8000%;
             margin-bottom: 0em;
             animation: carousel 150s linear infinite;
 
@@ -341,7 +247,7 @@ i {
             }
             
             span {
-                font-size: 4rem;
+                font-size: 5rem;
                 font-weight: lighter;
                 text-transform: uppercase;
                 letter-spacing: -3px;
@@ -358,14 +264,15 @@ i {
         height: 60px;
     }
 }
+
 @media only screen and (min-width: $sm) and (max-width: $md) {
     h1 {
-        font-size: 4.5rem;
+        font-size: 5rem;
         margin-top: -2rem;
     }
     
     h2 {
-    font-size: 4rem;  
+    font-size: 4.5rem;  
     letter-spacing: -8px;
     }
     
@@ -398,7 +305,7 @@ i {
     
     .navigate {
         .navigate-btn {
-            width: 30%;
+            width: 50%;
             padding: 0 20px;
             border-radius: 30px;
     
@@ -429,12 +336,12 @@ i {
                     transform: translateX(0);
                 }
                 to {
-                    transform: translateX(-30%);
+                    transform: translateX(-20%);
                 }
             }
             
             span {
-                font-size: 4rem;
+                font-size: 5.5rem;
                 font-weight: lighter;
                 text-transform: uppercase;
                 letter-spacing: -3px;
@@ -452,6 +359,93 @@ i {
     }
 }
 @media screen and (min-width: $md) and (max-width: $lg) {
+    h1 {
+        font-size: 5rem;
+        margin-top: -2rem;
+    }
+    
+    h2 {
+    font-size: 4.5rem;  
+    }
+    
+    h3 {
+        font-size: 4rem; 
+        font-weight: 300;
+    }
+    
+    h4 {
+        font-size: 3.5rem;
+        letter-spacing: -5px;
+    }
+    
+    h5 {
+        font-size: 3rem;  
+        letter-spacing: -2px;
+    }
+    
+    h6 {
+        font-size: 2rem;  
+    }
+    
+    p {
+        font-size: 13px;
+    }
+    
+    button {
+        font-size: 12px;
+    }
+    
+    .navigate {
+        .navigate-btn {
+            width: 80%;
+            padding: 0 20px;
+            border-radius: 30px;
+    
+            button {
+                padding: 6px 10px;
+            }
+        }
+    }
+    
+    .main-section {
+        padding: 0 50px;
+        height: 75vh;
+    }
+    
+    
+    // AUTOMATIC CAROUSEL DISPLAY
+    .main-carousel {
+        height: calc(100vh - 75vh - 50px);
+    
+        .carousel {
+            gap: 2em;
+            width: 6000%;
+            animation: carousel 160s linear infinite;
+
+            @keyframes carousel {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-30%);
+                }
+            }
+            
+            span {
+                font-size: 7.5rem;
+                letter-spacing: -3px;
+    
+                &:nth-child(even) {
+                    font-size: 3em;
+                }
+            }
+        } 
+    }
+    .footer-section {
+        height: 50px;
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
     h1 {
         font-size: 5rem;
         margin-top: -2rem;
@@ -491,7 +485,7 @@ i {
     
     .navigate {
         .navigate-btn {
-            width: 30%;
+            width: 50%;
             padding: 0 20px;
             border-radius: 30px;
     
@@ -503,18 +497,18 @@ i {
     
     .main-section {
         padding: 0 50px;
-        height: 80vh;
+        height: 70vh;
     }
     
     
     // AUTOMATIC CAROUSEL DISPLAY
     .main-carousel {
-        height: calc(100vh - 80vh - 60px);
+        height: calc(100vh - 70vh - 60px);
     
         .carousel {
             gap: 2em;
-            width: 4000%;
-            animation: carousel 120s linear infinite;
+            width: 5000%;
+            animation: carousel 160s linear infinite;
 
             @keyframes carousel {
                 from {
@@ -526,9 +520,7 @@ i {
             }
             
             span {
-                font-size: 9rem;
-                font-weight: lighter;
-                text-transform: uppercase;
+                font-size: 9.5rem;
                 letter-spacing: -3px;
     
                 &:nth-child(even) {
@@ -538,11 +530,9 @@ i {
         } 
     }
     .footer-section {
-        width: 100%;
         height: 60px;
     }
-}
-@media screen and (min-width: $lg) and (max-width: $xl) {
+
 }
 @media screen and (min-width: $xl) and (max-width: $giant) {
     h1 {
@@ -596,13 +586,13 @@ i {
     
     .main-section {
         padding: 0 50px;
-        height: 65vh;
+        height: 70vh;
     }
     
     
     // AUTOMATIC CAROUSEL DISPLAY
     .main-carousel {
-        height: calc(100vh - 65vh - 60px);
+        height: calc(100vh - 70vh - 60px);
     
         .carousel {
             gap: 2em;
@@ -619,7 +609,99 @@ i {
             }
             
             span {
-                font-size: 12.5rem;
+                font-size: 9.5rem;
+                font-weight: lighter;
+                text-transform: uppercase;
+                letter-spacing: -3px;
+    
+                &:nth-child(even) {
+                    font-size: 3em;
+                }
+            }
+        } 
+    }
+    .footer-section {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: $giant) {
+    h1 {
+        font-size: 6rem;
+        margin-top: -2rem;
+    }
+    
+    h2 {
+    font-size: 5rem;  
+    letter-spacing: -8px;
+    }
+    
+    h3 {
+        font-size: 3.8rem; 
+        font-weight: 300;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+        letter-spacing: -5px;
+    }
+    
+    h5 {
+        font-size: 1rem;  
+        letter-spacing: -2px;
+    }
+    
+    h6 {
+        font-size: .6rem;  
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 12px;
+    }
+    
+    .navigate {
+        .navigate-btn {
+            width: 30%;
+            padding: 0 20px;
+            border-radius: 30px;
+    
+            button {
+                padding: 6px 10px;
+            }
+        }
+    }
+    
+    .main-section {
+        padding: 0 50px;
+        height: 70vh;
+    }
+    
+    
+    // AUTOMATIC CAROUSEL DISPLAY
+    .main-carousel {
+        height: calc(100vh - 70vh - 60px);
+    
+        .carousel {
+            gap: 2em;
+            width: 4500%;
+            animation: carousel 200s linear infinite;
+
+            @keyframes carousel {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-30%);
+                }
+            }
+            
+            span {
+                font-size: 11rem;
                 font-weight: lighter;
                 text-transform: uppercase;
                 letter-spacing: -3px;

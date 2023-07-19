@@ -137,3 +137,338 @@ $detail: #AC4F29;
         }
     }
 }
+
+$xs: 0;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+$giant: 1400px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .contact-section {
+        padding-bottom: 5%;
+        .contact-content {
+            width: 95%;
+            flex-direction: column-reverse;
+            overflow-y: auto;            
+    
+            .form-content {
+                width: 100%;
+    
+                .form-data {
+                    input, textarea {
+                        margin-bottom: 10px;
+                        letter-spacing: -.7px;
+                        font-size: 12px;
+                    }
+    
+                    .warning {
+                        padding: 10px;
+                    }
+    
+                    .form-submit {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                
+            }
+    
+            .hit-my-line {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-bottom: 50px;
+    
+                .top-hit {
+                    text-align: left;
+                    h2 {
+                        font-family: 'Montserrat', serif;
+                        margin-bottom: 20px;
+                        position: relative; 
+                    }
+        
+                    #based {
+                        font-size: 15px;
+                        margin-top: 10px;
+                    }
+        
+                    .availability {
+                        margin-top: -15px;
+                        display: flex;
+                        justify-content: right;
+        
+                        p {
+                            letter-spacing: -.7px;
+        
+                        }
+                    }
+                }
+                .bottom-hit {
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 10px;
+    
+                    i {
+                        padding: 3px;
+                        border: 1px solid $detail;
+                        border-radius: 50%;
+                        cursor: default;
+                    }
+    
+                    .info {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .contact-section {
+        padding-bottom: 5%;
+        .contact-content {
+            width: 85%;
+            flex-direction: column-reverse;
+            overflow-y: auto;            
+    
+            .form-content {
+                width: 100%;
+    
+                .form-data {
+                    input, textarea {
+                        margin-bottom: 10px;
+                        letter-spacing: -.7px;
+                        font-size: 12px;
+                    }
+    
+                    .warning {
+                        padding: 10px;
+                    }
+    
+                    .form-submit {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                
+            }
+    
+            .hit-my-line {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-bottom: 50px;
+    
+                .top-hit {
+                    text-align: left;
+                    h2 {
+                        font-family: 'Montserrat', serif;
+                        margin-bottom: 20px;
+                        position: relative; 
+                    }
+        
+                    #based {
+                        font-size: 15px;
+                        margin-top: 10px;
+                    }
+        
+                    .availability {
+                        margin-top: -15px;
+                        display: flex;
+                        justify-content: right;
+        
+                        p {
+                            letter-spacing: -.7px;
+        
+                        }
+                    }
+                }
+                .bottom-hit {
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 10px;
+    
+                    i {
+                        padding: 3px;
+                        border: 1px solid $detail;
+                        border-radius: 50%;
+                        cursor: default;
+                    }
+    
+                    .info {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .contact-section {
+        padding-bottom: 5%;
+        .contact-content {
+            width: 100%;           
+    
+            .form-content {
+                width: 45%;
+    
+                .form-data {
+                    input, textarea {
+                        margin-bottom: 10px;
+                        letter-spacing: -.7px;
+                        font-size: 12px;
+                    }
+    
+                    .warning {
+                        padding: 10px;
+                    }
+    
+                    .form-submit {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                
+            }
+    
+            .hit-my-line {
+                display: flex;
+                align-items: flex-end;
+                padding-bottom: 50px;
+    
+                .top-hit {
+                    text-align: right;
+                    h2 {
+                        font-family: 'Montserrat', serif;
+                        margin-bottom: 20px;
+                        position: relative; 
+                    }
+        
+                    #based {
+                        font-size: 15px;
+                        margin-top: 10px;
+                    }
+        
+                    .availability {
+                        margin-top: -15px;
+                        display: flex;
+                        justify-content: right;
+        
+                        p {
+                            letter-spacing: -.7px;
+        
+                        }
+                    }
+                }
+                .bottom-hit {
+                    align-items: flex-end;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 10px;
+    
+                    i {
+                        padding: 3px;
+                        border: 1px solid $detail;
+                        border-radius: 50%;
+                        cursor: default;
+                    }
+    
+                    .info {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    .contact-section {
+        padding-bottom: 5%;
+        .contact-content {
+            width: 100%;           
+    
+            .form-content {
+                width: 45%;
+    
+                .form-data {
+                    input, textarea {
+                        margin-bottom: 10px;
+                        letter-spacing: -.7px;
+                        font-size: 12px;
+                    }
+    
+                    .warning {
+                        padding: 10px;
+                    }
+    
+                    .form-submit {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                
+            }
+    
+            .hit-my-line {
+                display: flex;
+                align-items: flex-end;
+                padding-bottom: 50px;
+    
+                .top-hit {
+                    text-align: right;
+                    h2 {
+                        font-family: 'Montserrat', serif;
+                        margin-bottom: 20px;
+                        position: relative; 
+                    }
+        
+                    #based {
+                        font-size: 15px;
+                        margin-top: 10px;
+                    }
+        
+                    .availability {
+                        margin-top: -15px;
+                        display: flex;
+                        justify-content: right;
+        
+                        p {
+                            letter-spacing: -.7px;
+        
+                        }
+                    }
+                }
+
+                .bottom-hit {
+                    gap: 1em;
+    
+                    .info {
+                        gap: 8px;
+                    }
+                }
+                
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+    
+}

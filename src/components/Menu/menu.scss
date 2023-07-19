@@ -119,11 +119,11 @@ $giant: 1400px;
                 gap: 0px;
     
                 img {
-                    width: 70px;
+                    width: 80px;
                 }
     
                 li {
-                    font-size: 3.8rem;
+                    font-size: 4.5rem;
                     transform: translateY(110%);   
                   
                 }
@@ -185,12 +185,12 @@ $giant: 1400px;
                 gap: 20px;
     
                 img {
-                    width: 130px;
+                    width: 150px;
                 }
     
     
                 li {
-                    font-size: 8rem;                    
+                    font-size: 8.7rem;                    
                   
                 }
             }
@@ -213,7 +213,29 @@ $giant: 1400px;
     
     
                 li {
-                    font-size: 8.5rem;               
+                    font-size: 9rem;               
+                  
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: $giant) {
+    .menu-container {
+        padding: 20px 60px;
+    
+        ul {
+            div {
+                gap: 10px;
+    
+                img {
+                    width: 150px;
+                }
+    
+    
+                li {
+                    font-size: 9rem;               
                   
                 }
             }
