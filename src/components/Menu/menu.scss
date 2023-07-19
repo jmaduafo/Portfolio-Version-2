@@ -66,7 +66,7 @@
                 line-height: 1.02em;
                 width: fit-content;
                 cursor: pointer;
-                transform: translateY(110%);
+                transform: translateY(140%);
                 
                 &.rise {
                     animation: rise 1s ease-in-out forwards .5s;
@@ -74,7 +74,7 @@
 
                 @keyframes rise {
                     from {
-                        transform: translateY(110%);
+                        transform: translateY(200%);
                     }
                     to {
                         transform: translateY(20%);
@@ -91,7 +91,7 @@
                         transform: translateY(20%);
                     }
                     to {
-                        transform: translateY(110%);
+                        transform: translateY(200%);
                         
                     }
                 }
@@ -113,18 +113,25 @@ $giant: 1400px;
 @media screen and (min-width: $xs) and (max-width: $sm) {
     .menu-container {
         padding: 20px;
+        justify-content: center;
+        align-items: center;
+        
     
         ul {
             div {
                 gap: 0px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
     
                 img {
                     width: 60px;
                 }
     
                 li {
-                    font-size: 3.2rem;
-                    transform: translateY(110%);   
+                    font-size: 3.5rem; 
                   
                 }
             }
@@ -135,19 +142,24 @@ $giant: 1400px;
 @media screen and (min-width: $sm) and (max-width: $md) {
     .menu-container {
         padding: 20px 30px;
+        justify-content: center;
+        align-items: center;
     
         ul {
             div {
-                gap: 20px;
+                gap: 0px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
     
                 img {
-                    width: 100px;
+                    width: 80px !important;
                 }
     
     
                 li {
-                    font-size: 5.5rem;                    
-                  
+                    font-size: 4.8rem;  
                 }
             }
             
@@ -160,7 +172,7 @@ $giant: 1400px;
     
         ul {
             div {
-                gap: 20px;
+                gap: 0px;
     
                 img {
                     width: 110px;

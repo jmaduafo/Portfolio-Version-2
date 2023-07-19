@@ -242,7 +242,7 @@ i {
                     transform: translateX(0);
                 }
                 to {
-                    transform: translateX(-30%);
+                    transform: translateX(-25%);
                 }
             }
             
@@ -327,7 +327,7 @@ i {
     
         .carousel {
             gap: 2em;
-            width: 5000%;
+            width: 4500%;
             margin-bottom: 0em;
             animation: carousel 100s linear infinite;
 
@@ -420,7 +420,7 @@ i {
     
         .carousel {
             gap: 2em;
-            width: 6000%;
+            width: 4500%;
             animation: carousel 160s linear infinite;
 
             @keyframes carousel {
@@ -509,15 +509,15 @@ i {
     
         .carousel {
             gap: 2em;
-            width: 5000%;
-            animation: carousel 160s linear infinite;
+            width: 4000%;
+            animation: carousel 170s linear infinite;
 
             @keyframes carousel {
                 from {
                     transform: translateX(0);
                 }
                 to {
-                    transform: translateX(-30%);
+                    transform: translateX(-25%);
                 }
             }
             
@@ -598,7 +598,7 @@ i {
     
         .carousel {
             gap: 2em;
-            width: 4500%;
+            width: 4000%;
             animation: carousel 180s linear infinite;
 
             @keyframes carousel {
@@ -690,7 +690,7 @@ i {
     
         .carousel {
             gap: 2em;
-            width: 4500%;
+            width: 3000%;
             animation: carousel 200s linear infinite;
 
             @keyframes carousel {
