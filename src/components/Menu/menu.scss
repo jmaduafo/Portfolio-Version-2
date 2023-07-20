@@ -69,7 +69,7 @@
                 transform: translateY(140%);
                 
                 &.rise {
-                    animation: rise 1s ease-in-out forwards .5s;
+                    animation: rise 1.3s ease-in-out forwards .5s;
                 }
 
                 @keyframes rise {
@@ -83,7 +83,7 @@
                 }
                 
                 &.fall {
-                    animation: fall 1.2s ease-in-out forwards;
+                    animation: fall 1.3s ease-in-out forwards;
                 }
 
                 @keyframes fall {
