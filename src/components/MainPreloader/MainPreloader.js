@@ -23,7 +23,7 @@ const MainPreloader = ({setPreloader}) => {
       clearInterval(intervalRef.current)
       setPreloader(false)
     }
-  }, [timer])
+  }, [timer, setPreloader])
 
 
   // variants={loaderVariant} initial="starting" animate='animate' transition={{ delay: 6, duration: 2 }} [0.22, 1, .36, 1]

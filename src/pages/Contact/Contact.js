@@ -70,8 +70,8 @@ const Contact = ({setNav}) => {
         Host : "smtp.elasticemail.com",
         Username : process.env.REACT_APP_USERNAME,
         Password : process.env.REACT_APP_PASSWORD,
-        To : process.env.REACT_APP_USERNAME,
-        From : email,
+        To : email,
+        From : process.env.REACT_APP_USERNAME,
         Subject : "Jasmine's Portfolio Message",
         Body : `From: ${name}: ${message}`
     }).then(
