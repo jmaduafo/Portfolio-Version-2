@@ -73,7 +73,7 @@ const Contact = ({setNav}) => {
         To : email,
         From : process.env.REACT_APP_USERNAME,
         Subject : "Jasmine's Portfolio Message",
-        Body : `From: ${name}: ${message}`
+        Body : `<p>This is a confirmation that your message has been sent to the recipient. Your message reads:<br/><br/>From: ${name} <br/> ${message}</p>`
     }).then(
       message => {
         setMainMessage(message)
