@@ -1,0 +1,94 @@
+$background: #C79D8B;
+$text: #FFE9BF;
+$detail: #AC4F29;
+
+.message-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .message-content {
+        width: 35%;
+        background-color: #FFE9BF25;
+        border-radius: 30px;
+        padding: 20px;
+        color: $detail;
+
+        .message-close {
+            text-align: right;
+
+            i {
+                cursor: pointer;
+            }
+        }
+
+        .message-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+
+            p {
+                font-size: 14px;
+                letter-spacing: -.5px;
+                color: $text;
+            }
+        }
+    }
+}
+
+$xs: 0;
+$sm: 480px;
+$md: 720px;
+$lg: 960px;
+$xl: 1200px;
+$giant: 1400px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {    
+    .message-container {    
+        .message-content {
+            width: 85%;
+        }
+    }
+}
+  
+@media only screen and (min-width: $sm) and (max-width: $md) {
+    .message-container {    
+        .message-content {
+            width: 55%;
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .message-container {    
+        .message-content {
+            width: 45%;
+        }
+    }
+
+}
+@media screen and (min-width: $lg) and (max-width: $xl) {
+    .message-container {    
+        .message-content {
+            width: 35%;
+        }
+    }
+  
+}
+@media screen and (min-width: $xl) and (max-width: $giant) {
+   
+}
+  
+@media screen and (min-width: $giant) {
+   
+}

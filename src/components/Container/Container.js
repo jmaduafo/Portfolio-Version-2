@@ -19,7 +19,7 @@ const Container = () => {
         } else if (nav === 'works') {
             return <Works/>
         } else if (nav === 'contact') {
-            return <Contact/>
+            return <Contact setNav={setNav}/>
         } else if (nav === 'resume') {
             return <Resume/>
         }        

@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import PortfolioCarousel from '../../components/PortfolioCarousel/PortfolioCarousel'
 import '../Contact/contact.scss'
+import Message from '../../components/Message/Message'
 
-const Contact = () => {
+const Contact = ({setNav}) => {
   const [errorMessage, setErrorMessage] = useState('')
   const [approvedMessage, setApprovedMessage] = useState('')
 
@@ -14,6 +15,8 @@ const Contact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+
+  const [mainMessage, setMainMessage] = useState('')
   
   function mouseHandling() {
     // When the mouse leaves the input or textarea box, if the values are empty, then log the 
@@ -63,19 +66,34 @@ const Contact = () => {
     if (errorMessage === '' && nameApproved && emailApproved && messageApproved) {
       setContactApproved(true)
       setApprovedMessage('Your message has been submitted successfully!')
-      console.log(name, email, message)
+      window.Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : process.env.REACT_APP_USERNAME,
+        Password : process.env.REACT_APP_PASSWORD,
+        To : process.env.REACT_APP_USERNAME,
+        From : email,
+        Subject : "Jasmine's Portfolio Message",
+        Body : `From: ${name}: ${message}`
+    }).then(
+      message => {
+        setMainMessage(message)
+      }
+    ).catch(err => console.log(err))
       setName('');
       setEmail('');
       setMessage('');
     }  
   }
 
+
+
   return (
     <section>
       <div className='main-section contact-section'>
+        {mainMessage === 'OK' ? <Message setNav={setNav} contactApproved={contactApproved} message='Your message has been sent to the receiver!'/> : <Message setNav={setNav} contactApproved={contactApproved} message={mainMessage}/>}
         <div className='contact-content'>
           <div className='form-content'>
-            <form className='form-data' onSubmit={handleSubmit} action={contactApproved === true ? "mailto: jmaduafokwa@hotmail.com" : ''} method="post" encType="multipart/form-data" >
+            <form className='form-data' onSubmit={handleSubmit}>
               <input type='text' placeholder='Name' value={name} onMouseLeave={mouseHandling} onChange={(e) => setName(e.target.value)}/>
               <input type='email' placeholder='Email' value={email} onMouseLeave={mouseHandling} onChange={(e) => setEmail(e.target.value)}/>
               <textarea placeholder='Send a message...' rows={6} value={message} onMouseLeave={mouseHandling} onChange={(e) => setMessage(e.target.value)}></textarea>
