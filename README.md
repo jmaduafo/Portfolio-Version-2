@@ -2,7 +2,7 @@
 
   ## Description
   
-  * Disclaimer:  Portfolio isn't yet fully responsive and more animations will be added using framer motion
+  * Disclaimer:  More animations will be added using framer motion
   * Deployed Link: https://jmaduafo.github.io/Portfolio-Version-2
     
   For my portfolio, I wanted to show my skills in using React, but I also wanted to create a website that's personal to me and conveys my personality and my design sense well. I intend to add animations very soon to enhance user experience and to elevate the website further. Furthermore, I wanted it to look professional but not too conventional in order for it to stand out. I was inspired greatly by awwwards.com, and my goal was to create a website that would look like it would be on there. The portfolio includes a Home, About, Works, Contact, and Resume section and I believe that going through these pages would give the user a good idea of who I am.
