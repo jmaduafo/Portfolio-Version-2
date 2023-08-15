@@ -10,6 +10,7 @@ import Footer from '../Footer/Footer'
 const Container = () => {
     const [nav, setNav] = useState('home')
     const[isRotated, setIsRotated] = useState(true)
+    const [works, setWorks] = useState('')
 
     function render() {
         if (nav === 'home') {

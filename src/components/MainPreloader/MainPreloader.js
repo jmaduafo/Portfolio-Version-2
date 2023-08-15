@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import CountUp from 'react-countup'
 
 const MainPreloader = ({setPreloader}) => {
-  const [timer, setTimer] = useState(12)
+  const [timer, setTimer] = useState(9)
 
   let intervalRef = useRef();
   
@@ -30,10 +30,10 @@ const MainPreloader = ({setPreloader}) => {
 
   return (
     <motion.div className='preloader-section'>
-      <motion.div className='preloader-cover' initial={{ height: 0 }} animate={{ height: '100%', ease: 'easeInOut' }} transition={{ delay: 10.9, duration: .7 }}></motion.div>
+      <motion.div className='preloader-cover' initial={{ height: 0 }} animate={{ height: '100%', ease: 'easeInOut' }} transition={{ delay: 7.9, duration: .7 }}></motion.div>
       <div className='loader-num'>
         <div>
-          <CountUp start={0} end={100} duration={13.2} delay={.7} className='count-up'/>
+          <CountUp start={0} end={100} duration={9} delay={.7} className='count-up'/>
         </div>
         <div>
           <p>%</p>

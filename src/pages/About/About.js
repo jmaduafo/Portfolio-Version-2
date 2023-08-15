@@ -31,10 +31,10 @@ const About = ({setNav}) => {
               <div className='about-main-text'>
                 <div className='top-text'>
                   <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit condimentum mauris a dignissim. Fusce rutrum fringilla leo, nec varius est fermentum eget. Nam mollis scelerisque urna, ut consectetur felis sagittis id.</p>
+                    <p>I’m a Nigerian-American specializing in both frontend and backend development as well as design. My dream to become a web developer began during COVID, and since then, I’ve been juggling completing my bachelors in science and sneaking in coding and design practice when possible. </p>
                   </div>
                   <div>
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit condimentum mauris a dignissim. Fusce rutrum fringilla leo.</h4>
+                  <h4>Keep your dreams alive. Understand to achieve anything requires faith in yourself, vision, hard work, and dedication.</h4>
                   </div>
                 </div>
               </div>
@@ -57,7 +57,7 @@ const About = ({setNav}) => {
             </div>
             <div className='about-works'>
               <div className='about-works-left'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit condimentum mauris a dignissim. Fusce rutrum fringilla leo, nec varius est fermentum eget. Nam mollis scelerisque urna, ut consectetur felis sagittis id.</p>
+                <p>I don't just want to design websites. I also want to code them from scratch with the goal of making them accessible to all users by utilizing fundamental UX principles. In my works, I showcase skills and knowledge in UI/UX, frontend, and backend.</p>
                 {/* <h3>Discover More</h3> */}
                 <div className='about-work-image about-work-left-image'>
                   <img src={worksImage1} alt='sleek teal and gold office space with blue suede chair' />
